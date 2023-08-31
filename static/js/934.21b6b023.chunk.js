@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkinstagram=self.webpackChunkinstagram||[]).push([[934],{2934:function(e,t,n){n.r(t),n.d(t,{default:function(){return c}});var a=n(2791),r=n(184);function c(){return(0,a.useEffect)((function(){document.title="Error 404"}),[]),(0,r.jsx)("div",{className:"bg-gray-background",children:(0,r.jsx)("div",{className:" mx-auth  m-auto max-w-screen-lg",children:(0,r.jsx)("p",{className:"text-center text-2xl",children:"Not Found !"})})})}}}]);
+//# sourceMappingURL=934.21b6b023.chunk.js.map
