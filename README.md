@@ -4,6 +4,12 @@ Built by Abdelrahman Samer Kalefa.
 
 Independent Instagram-style portfolio app. Not affiliated with Instagram or Meta.
 
+## Live demo
+
+https://instagram-clone-supabase.vercel.app/
+
+Deployed on Vercel Hobby with a dedicated Supabase Free backend. Use independent app credentials or a guest account, never an Instagram password.
+
 ## Stack
 
 React 19, Vite 6, Supabase Auth, Postgres, Storage and Realtime. A publishable client key is intentionally included in `src/supabase-config.json`. No database password, service-role key, Vercel token or other privileged credential belongs in the client or repository.
@@ -51,4 +57,6 @@ Rows have RLS, client writes are restricted to their owner, notifications are ge
 
 `npm run test:ui` starts the local site, runs real browser interactions against Supabase and removes its temporary account afterward. Browser executable currently defaults to `/usr/bin/google-chrome` in the test script.
 
-Recorded checks cover media persistence, friends, follows, likes, saves, comments, stories, private chat and attachments, read receipts, notifications, ownership denials, account-private rows and cascading deletion. Actual desktop and phone screenshots were inspected. A final hosted deployment check and the remaining email/password UI check must be completed before release is reported as done.
+Production verified on 2026-11-22. Checks cover email/password signup, logout, login and reload persistence; guest accounts; friends; follows; likes, comments and saves; photo and MP4 publishing; real-time private text, image and video chat between two browser accounts; live read receipts; outsider access denial; and temporary-account cleanup. Nine direct routes, security headers and deployed stock-media bytes were checked. Actual hosted desktop, phone, profile and private-chat screenshots were inspected.
+
+The database checks also cover 24-hour stories, recipient-private notifications, ownership denials, private saved posts and friend lists, and cascading deletion. This is a verified portfolio demo within the limits above, not a claim to every feature of the Instagram service.
