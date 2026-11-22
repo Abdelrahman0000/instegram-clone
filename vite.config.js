@@ -1,0 +1,1 @@
+import {defineConfig} from 'vite';export default defineConfig({build:{sourcemap:false,rollupOptions:{output:{manualChunks(id){if(id.includes('node_modules')){if(id.includes('@supabase'))return 'supabase';if(id.includes('lucide'))return 'icons';return 'vendor'}}}}},server:{host:'0.0.0.0'}});

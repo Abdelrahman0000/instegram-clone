@@ -1,0 +1,15 @@
+node_modules
+dist
+legacy-original
+images
+static
+api
+server
+dev-assets
+tests
+supabase
+*.zip
+*.md
+*-check*.mjs
+production-check-server.mjs
+.env*

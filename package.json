@@ -1,11 +1,24 @@
 {
-  "name": "instegram",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "instagram-clone-supabase",
+  "private": true,
+  "version": "3.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test tests/safety.test.js",
+    "test:integration": "node tests/supabase-integration.mjs",
+    "test:ui": "node tests/ui-smoke.mjs"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.2",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "vite": "^6.0.0"
+  }
 }
